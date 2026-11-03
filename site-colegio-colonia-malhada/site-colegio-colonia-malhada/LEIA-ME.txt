@@ -8,25 +8,25 @@ VS Code etc.). Depois de salvar, atualize a página no navegador
 
 
 1. ONDE FICA CADA COISA
------------------------
 
-  index.html ........... aba Início
-  sobre.html ........... aba Sobre nós
-  ensino.html .......... aba Ensino
-  equipe.html .......... aba Equipe
-  noticias.html ........ aba Notícias
-  calendario.html ...... aba Calendário
-  contato.html ......... aba Contato
 
-  css/estilo.css ....... aparência (cores, fontes, espaços)
-  js/site.js ........... comportamento (menu do celular, ano do
+  index.html . aba Início
+  sobre.html . aba Sobre nós
+  ensino.html . aba Ensino
+  equipe.html . aba Equipe
+  noticias.html . aba Notícias
+  calendario.html . aba Calendário
+  contato.html . aba Contato
+
+  css/estilo.css . aparência (cores, fontes, espaços)
+  js/site.js . comportamento (menu do celular, ano do
                          rodapé, formulário de contato)
-  imagens/ ............. logo e fotos
-  videos/ .............. vídeo do tutorial de matrícula
+  imagens/ . logo e fotos
+  videos/ . vídeo do tutorial de matrícula
 
 
 2. A REGRA DE OURO
-------------------
+
 
 Em cada página .html, o conteúdo fica entre as duas linhas de
 "====" (logo depois do menu). É ali que você mexe.
@@ -50,7 +50,7 @@ Dica: antes de editar, faça uma cópia da pasta inteira do site.
 
 
 3. O QUE DÁ PARA MUDAR EM CADA ABA
-----------------------------------
+
 
 TEXTOS AMARELOS (todas as abas)
   São espaços que ainda faltam preencher. No código aparecem assim:
@@ -106,7 +106,7 @@ CONTATO (contato.html)
 
 
 4. FOTOS, CORES E PARTES QUE SE REPETEM
----------------------------------------
+
 
 COLOCAR OU TROCAR UMA FOTO
   1. Coloque a foto na pasta imagens, com um nome sem espaços nem
