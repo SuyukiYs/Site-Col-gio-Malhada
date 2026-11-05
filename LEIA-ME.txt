@@ -1,0 +1,138 @@
+SITE DO COLÉGIO COLÔNIA MALHADA — GUIA DE EDIÇÃO
+=================================================
+
+Para ver o site, abra o arquivo index.html no navegador.
+Para editar, abra os arquivos num editor de texto (Bloco de Notas,
+VS Code etc.). Depois de salvar, atualize a página no navegador
+(F5) para ver a mudança.
+
+
+1. ONDE FICA CADA COISA
+-----------------------
+
+  index.html ........... aba Início
+  sobre.html ........... aba Sobre nós
+  ensino.html .......... aba Ensino
+  equipe.html .......... aba Equipe
+  noticias.html ........ aba Notícias
+  calendario.html ...... aba Calendário
+  contato.html ......... aba Contato
+
+  css/estilo.css ....... aparência (cores, fontes, espaços)
+  js/site.js ........... comportamento (menu do celular, ano do
+                         rodapé, formulário de contato)
+  imagens/ ............. logo e fotos
+  videos/ .............. vídeo do tutorial de matrícula
+
+
+2. A REGRA DE OURO
+------------------
+
+Em cada página .html, o conteúdo fica entre as duas linhas de
+"====" (logo depois do menu). É ali que você mexe.
+
+Pode mudar à vontade:
+  - o texto que fica ENTRE as marcações, por exemplo:
+      <p>Esse texto pode mudar</p>
+      <h3>Esse título também</h3>
+
+Não mude (senão a aparência ou o menu quebram):
+  - as marcações em si: <div>, <p>, <h2>, <h3>, <img> etc.
+  - o que vem depois de class="...", id="..." e data-...
+  - tudo o que vem ANTES da primeira linha de "====" e DEPOIS da
+    última (cabeçalho, menu, rodapé e as ligações com o CSS e o JS)
+  - os arquivos css/estilo.css e js/site.js, a não ser nos pontos
+    indicados na parte 4 deste guia
+
+Toda marcação que abre precisa fechar: <p> ... </p>.
+Se apagar um "<" ou um "</p>" sem querer, a página pode desmontar.
+Dica: antes de editar, faça uma cópia da pasta inteira do site.
+
+
+3. O QUE DÁ PARA MUDAR EM CADA ABA
+----------------------------------
+
+TEXTOS AMARELOS (todas as abas)
+  São espaços que ainda faltam preencher. No código aparecem assim:
+      <span class="preencher">[Título da notícia]</span>
+  Troque TUDO isso só pelo texto final:
+      Feira de Ciências 2026
+
+INÍCIO (index.html)
+  - Texto de boas-vindas.
+  - Caixas Matrículas, Próximo evento e Aviso importante: troque o
+    texto dentro de cada uma.
+  - Link da Área do Aluno: o endereço fica em href="..." e o texto
+    que aparece fica entre <a ...> e </a>.
+  - Vídeo do Tutorial: para trocar o vídeo, coloque o novo arquivo
+    na pasta videos com o nome Matricula.mp4 (M maiúsculo).
+
+SOBRE NÓS (sobre.html)
+  - Os parágrafos da história (cada parágrafo é um <p> ... </p>).
+  - Missão, Visão e Valores.
+
+ENSINO (ensino.html)
+  - Nome e descrição do curso técnico e de cada nível de ensino.
+  - Turnos e horários escritos nas caixas.
+
+EQUIPE (equipe.html)
+  - Cada pessoa é um bloco assim:
+      <div class="pessoa">
+        <div class="foto">Foto</div>
+        <h3>Nome</h3>
+        <p>Cargo</p>
+      </div>
+  - Para acrescentar alguém: copie um bloco inteiro (do <div
+    class="pessoa"> até o </div> dele) e cole logo abaixo de outro.
+  - Para tirar alguém: apague o bloco inteiro dessa pessoa.
+
+NOTÍCIAS (noticias.html)
+  - Cada notícia é um bloco <article class="caixa noticia"> ...
+    </article>, com foto, título, data e resumo.
+  - Para mais notícias, copie um bloco inteiro e cole abaixo.
+
+CALENDÁRIO (calendario.html)
+  - Cada evento é um bloco <div class="evento"> ... </div>, com a
+    data (dd/mm), o nome do evento e os detalhes.
+  - Para mais eventos, copie um bloco inteiro e cole abaixo.
+  - Tabela de horários: mude só os horários dentro de <td> ... </td>.
+
+CONTATO (contato.html)
+  - Endereço, horário de atendimento e os textos visíveis.
+  - Telefone: mude em DOIS lugares, no texto que aparece e no
+    href="tel:+55..." (só números, com +55 e o DDD).
+  - E-mail: mude em DOIS lugares, no texto e no href="mailto:...".
+  - Atenção: o formulário de mensagem ainda não envia e-mail.
+
+
+4. FOTOS, CORES E PARTES QUE SE REPETEM
+---------------------------------------
+
+COLOCAR OU TROCAR UMA FOTO
+  1. Coloque a foto na pasta imagens, com um nome sem espaços nem
+     acentos (ex.: feira-ciencias.jpg).
+  2. Troque o espaço vazio
+       <div class="foto">Foto da notícia</div>
+     por
+       <img class="foto" src="imagens/feira-ciencias.jpg" alt="Descrição curta da foto">
+  3. Para trocar uma foto que já existe, basta colocar a nova na
+     pasta imagens com o MESMO nome da antiga.
+  O texto do alt="..." descreve a foto para quem usa leitor de tela;
+  pode mudar à vontade.
+
+LOGO
+  Substitua imagens/logo.png por outra imagem com o mesmo nome
+  (de preferência quadrada).
+
+CORES
+  No css/estilo.css, parte 1 ("CORES E FONTES"), mude só os
+  códigos de cor, como #2b4c9b. Cada linha tem um comentário
+  dizendo onde aquela cor é usada. As cores das abas do menu
+  ficam na mesma parte, nas linhas que começam com --aba-.
+
+CABEÇALHO, MENU E RODAPÉ
+  Estão repetidos no começo e no fim das 7 páginas. Para mudar o
+  nome do colégio, o texto do rodapé ou o nome de uma aba, faça a
+  mesma mudança nas 7 páginas, mexendo só no texto.
+  Criar ou apagar abas mexe na estrutura do site; o ideal é pedir
+  ajuda para quem conhece o código.

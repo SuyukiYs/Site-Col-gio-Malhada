@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contato — Colégio Colônia Malhada</title>
+<link rel="icon" href="imagens/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="contato">
+
+<!-- Cabeçalho e menu (iguais em todas as páginas) -->
+<header class="cabecalho">
+  <a href="index.html">
+    <img class="logo" src="imagens/logo.png" alt="Logo do Colégio Estadual do Campo Colônia Malhada">
+    <div>
+      <h1>Colégio Colônia Malhada</h1>
+      <p>Colégio Estadual do Campo</p>
+    </div>
+  </a>
+</header>
+
+<nav class="menu" id="nav" aria-label="Páginas do site">
+  <div class="barra-celular">
+    <span>Contato</span>
+    <button class="botao-menu" type="button" aria-expanded="false" aria-controls="lista-abas">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menu
+    </button>
+  </div>
+  <div class="abas" id="lista-abas">
+    <a href="index.html" data-aba="inicio">Início</a>
+    <a href="sobre.html" data-aba="sobre">Sobre nós</a>
+    <a href="ensino.html" data-aba="ensino">Ensino</a>
+    <a href="equipe.html" data-aba="equipe">Equipe</a>
+    <a href="noticias.html" data-aba="noticias">Notícias</a>
+    <a href="calendario.html" data-aba="calendario">Calendário</a>
+    <a href="contato.html" data-aba="contato" aria-current="page">Contato</a>
+  </div>
+</nav>
+
+<main>
+<div class="folha">
+
+<!-- ==========================================================
+     PAGINA: CONTATO
+     O conteudo desta pagina fica entre as duas linhas de "====".
+     Textos com class="preencher" (amarelos) ainda faltam preencher.
+     ========================================================== -->
+
+<h2>Fale com a gente</h2>
+
+<div class="colunas">
+  <!-- Dados de contato -->
+  <div>
+    <h3>Endereço</h3>
+    <p>Rua Apolônia Gribosi Guerra, 1750 – Colônia Malhada<br>São José dos Pinhais – PR</p>
+
+    <h3>Telefone</h3>
+    <p><a href="tel:+554192556957">(41) 9255-6957</a></p>
+
+    <h3>E-mail</h3>
+    <p><a class="email" href="mailto:sjpcoloniamalhada@escola.pr.gov.br">sjpcoloniamalhada@escola.pr.gov.br</a></p>
+
+    <h3>Atendimento da secretaria</h3>
+    <p>Segunda a sexta, das 7h15 às 17h15</p>
+  </div>
+
+  <!-- Formulario (ainda nao envia de verdade) -->
+  <form class="form-contato">
+    <label>Nome<input required></label>
+    <label>E-mail ou telefone<input required></label>
+    <label>Mensagem<textarea rows="4" required></textarea></label>
+    <button class="botao" type="submit">Enviar mensagem</button>
+    <p class="aviso" hidden>Exemplo: este formulário ainda precisa ser ligado a um e-mail para enviar de verdade.</p>
+  </form>
+</div>
+
+<!-- ========================================================== -->
+
+</div>
+</main>
+
+<!-- Rodapé (igual em todas as páginas; o ano é atualizado pelo js/site.js) -->
+<footer class="rodape">
+  © <span id="ano">2026</span> Colégio Estadual do Campo Colônia Malhada<br>
+  Site desenvolvido pelos alunos Suyuki Denis e Lucas Barão.
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
